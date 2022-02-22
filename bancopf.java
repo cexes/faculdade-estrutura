@@ -1,26 +1,45 @@
-public class bancopf  extends contapf{
+import java.util.Date;
+import java.text.SimpleDateFormat;
+public class Bancopf  extends Contapf{
 
-	public String nome;
-    private  double nascimento;
-    private double cpf;
-  
+	Date data = new Date();
+        SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy");
+	String niver = formatar.format(data);
+   
+	private String nome;
+        private String  nascimento;
+        private String cpf;
+
     
+    Bancopf(){
+    	this.nome = nome;
+    	this.nascimento = niver;
+    	this.cpf = cpf;
+    	
+    }
     
-    public void  set_cpf(double cpf) {
-    	if(cpf == 00000000000) {
-    		System.out.println("ERRO");}
+    public String getNascimento(){
+    	return this.nascimento;
+    }
+    
+    public void setNascimento(String nascimento) {
+         this.nascimento = nascimento;     	
+    }
+      
+    public String getCpf() {
+    	return this.cpf;
+    }
+   
+    public void setCpf(String cpf) {
     	this.cpf = cpf;
     }
-    public double get_cpf(){
-    	  return this.cpf;
-    }
-     
-    public void set_nascimento(double aniversario) {
-    	if(aniversario == 00000000) {
-    		System.out.println("ERRO, data de aniversario inserida incorretamente");
-    	} this.nascimento = aniversario;
-    }
 
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 }
-	
 
