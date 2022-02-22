@@ -1,22 +1,30 @@
+public class Bancoempresa extends Contapj{
 
-public class bancoempresa extends contapj{
-
-	public String nome;
-	private double cnpj;
+	private String nome;
+	private String cnpj;
 	
-	
-	public double getCnpj() {
-		return cnpj;
-	}
-	public void setCnpj(double cnpj) {
-	   if(cnpj == 00000000000 ) {
-		   System.out.println("erro");
-	   }
+	Bancoempresa(){
+		this.nome = nome;
 		this.cnpj = cnpj;
 	}
 	
+   public String getCnpj() {
+		return cnpj;
+	}
+    
+    public void setCnpj(String cnpj) {
+	    this.cnpj = cnpj;
 	
+    }
 	
+    public String getNome() {
+    	return this.nome;
+    }
+	
+    public void setNome(String nome) {
+    	 
+    	this.nome = nome;
+    }
 	
 	
 }
