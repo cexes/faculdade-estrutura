@@ -1,10 +1,10 @@
 
-public class contapf {
+public class Contapf {
     
 	private double saldo = 200;
 	
 	public void mostrar_saldo_cliente() {
-		System.out.println("Seu saldo é:" + this.saldo);
+		System.out.println("Seu saldo Ã©:" + this.saldo);
 	}
 	
 	 public double depositar(double deposito) {
