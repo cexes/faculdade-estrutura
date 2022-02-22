@@ -1,10 +1,13 @@
+public class Contapj {
 
-public class contapj {
-
-private double saldo = 200;
+    private double saldo = 200;
 	
+    Contapj(){
+     this.saldo = 200;
+    }
+   
 	public void mostrar_saldo_cliente() {
-		System.out.println("Seu saldo é:" + this.saldo);
+		System.out.println("Seu saldo Ã©:" + this.saldo);
 	}
 	
 	 public double depositar(double deposito) {
